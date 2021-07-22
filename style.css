@@ -6,7 +6,7 @@
 .header {
 	width: 100%;
 	height: 450px;
-	background: url(../images/headerImg.jpg);
+	background: url(./images/headerImg.jpg);
 	background-size: 100% 450px;
 }
 #header-overlay {
@@ -18,7 +18,7 @@
 #abt-header {
 	width: 100%;
 	height:80px;
-	background: url(../images/headerImg.jpg);
+	background: url(./images/headerImg.jpg);
 	background-size: 100% 650px;
 }
 #headerabt-overlay {
@@ -45,9 +45,10 @@
 }
 .headerFirstLevel h3{
 	color: #fff;
-	font-size: 30px;
+	font-size: 25px;
 	font-family: Viga, sans-serif;
 	font-weight: 300;
+	
 }
 .headerSecondLevel{
 	width: 50%;
@@ -65,9 +66,9 @@
 }
 .headerSecondLevel p{
 	color: #fff;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: 200;
-	font-family: allerta, sans-serif;
+	font-family: 'Courier New', Courier, monospace;
 	line-height: 40px;
 }
 .headerSecondLevel ul{
@@ -115,6 +116,14 @@
 	font-size: 17px;
 	font-family: "Roboto Condensed", sans-serif;
 }
+
+.rightHeader ul li a:hover {
+	text-decoration: underline;
+	padding: 5px 10px;
+	font-size: 17px;
+	font-family: "Roboto Condensed", sans-serif;
+  }
+  
 .body{
 	width: 100%;
 	height: auto;
@@ -498,13 +507,14 @@
 	background: rgb(34 34 34); 
 	padding:50px 30px 15px 0px;
 }
-.footerFirstLevel{
+.container{
+	display: flex;
+	flex-direction: center;
 	width: 75%;
 	height: auto;
 	overflow: hidden;
 	padding-bottom: 30px;
 	margin: auto;
-	
 }
 .footerSupport{
 	width: 25%;
@@ -519,6 +529,8 @@
   padding-right: 5px;
   padding-left: 5px;
   margin: auto;
+  display: flex;
+  justify-content: center;
   }
 #media li {
 	float: left;
