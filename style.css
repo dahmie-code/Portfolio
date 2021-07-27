@@ -108,7 +108,7 @@ nav ul li a {
 }
 
 .hire-btn {
-    background-color: #0b0b0b;
+    background: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
     color: #fff;
     border: none;
 }
@@ -160,7 +160,7 @@ button:active {
 	color:#ffffff;
 	outline:none;
 	border:none;
-	background-color:#262525;
+	background: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
 }
 
 .skills {
@@ -364,4 +364,139 @@ button:active {
 	border:none;
 	outline: none;
 	border-radius:5px;
+}
+#get-in-touch{
+    width: 75%;
+    height: 100px;
+    background-color: #3e3d3d;
+    display: flex;
+    margin: 60px auto;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    background-size: 400px;
+}
+
+#get-in-touch span{
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#get-in-touch a{
+    color: #fff;
+    width: 160px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
+}
+
+#contact-form{
+    width:100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-form form{
+    display: flex;
+    width: 55%;
+    height: 50vh;
+    background-color: #505050;
+    box-shadow: 2px 12px 20px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.01);
+}
+
+.contact-left {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-right{
+    width: 60%;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-left: 1px solid rgba(255,255,255,0.08);
+}
+
+.contact-right button{
+    width: 100%;
+	height: 50px;
+    background: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
+	font-weight: bold;
+	outline: none;
+	border: none;
+	margin: 0px;
+	color:#fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.fullName,.eMail{
+	display: flex;
+	flex-direction: column;
+    font-family: calibri;
+}
+
+.fullName input, .eMail input{
+	height: 30px;
+	width:250px;
+	border: none;
+	outline: none;
+	background-color: transparent;
+	border-bottom: 1px solid #929292;
+	color:#fff;
+	margin: 10px 0px;
+}
+
+/*.fullName input::placeholder,
+.eMail input::placeholder{
+	opacity: 0.5;
+	letter-spacing: 1px;
+}*/
+.fullName input:focus,
+.eMail input:focus{
+	border-bottom: 1px solid #2788e2;
+	transition: all ease 0.5s;
+}
+.message h3{
+	font-size: 20px;
+	color:rgba(255, 255, 255, 0.5);
+	font-family: calibri;
+}
+
+.message{
+    margin: 20px;
+    text-align: center;
+}
+.contact-right textarea{
+	width: 100%;
+	height: 200px;
+	border: none;
+	outline: none;
+	background-color:transparent;
+	box-sizing: border-box;
+	color:#EBEBEB;
+	font-size: 16px;
+}
+.contact-right textarea::placeholder{
+	color:#EBEBEB;
+	font-size: 18px;
+	letter-spacing: 2px;
+	font-family: calibri;
+}
+.contact-right button:active{
+	transform: scale(1.04);
+	transition: all ease 0.1s;
 }
