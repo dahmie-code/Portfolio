@@ -4,100 +4,62 @@
 	<meta charset="utf-8">
 	<title>Damilola</title>
 	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/> 
 </head>
 <body>
-	<div id="abt-header">
-		<div id="headerabt-overlay">
-		<div class="headerTextHolder">
-			<div class="leftHeader">
-				<div class="headerFirstLevel">
-					<h3>dAmIe</h3>
+	<section class="navBar">   
+		<!--Nav Bar-->
+	   <div class="navBar-Overlay">
+		   <nav>
+			  <a href="#" class="logo">dAmIe</a>
+			   <ul>
+				 <li><a href="index.html" class="active">Home</a></li>
+				 <li><a href="about.html">About</a></li>
+				 <li><a href="work.html">Projects</a></li>
+				 <li><a href="contact.html">Contact</a></li>
+			   </ul>
+			    <div class="nav-toggle"></div>
+		   </nav>
+	    </div>
+	 </section>
+	<!--Contact Form-->
+	<div id="contact-form">
+		<form name="bookingForm" action="#" method="POST" data-netlify="true" onsubmit="return validate();">
+			<div class="contact-left">
+			  <div class="fullName">
+				  <input type="text" name="name" placeholder="Full Name">
+			  </div>
+			  <div class="eMail">
+				  <input type="email" name="name" placeholder="hi@email.com">
+			  </div>
+			</div>
+			<div class="contact-right">
+				<div class="message">
+					<h3>Chat Box</h3>
+					<textarea name="message" cols="30" rows="5" placeholder="Type Your Message...."></textarea>
 				</div>
-				
+				<button>Submit</button>
 			</div>
-			<div class="rightHeader">
-				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="work.html">Work</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
+		</form>
+	 </div>
 			
-			</div>
+	  <!--Footer-->
+	  <footer>
+		<span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
+		<div class="footer-social">
+			<a href="https://www.facebook.com/Darhmelawlah/">
+				<i class="fab fa-facebook-f"></i>
+			</a>
+			<a href="#">
+				<i class="fab fa-twitter"></i>
+			</a>
+			<a href="https://github.com/dahmie-code">
+				<i class="fab fa-github"></i>
+			</a>
+			<a href="https://www.linkedin.com/in/ogungbenro-oluwadamilola-51979bb9/">
+				<i class="fab fa-linkedin"></i>
+			</a>
 		</div>
-		</div>
-	</div>
-	<div class="recentBody1">
-		<h4>CONTACT</h4>
-		<div class="contact">
-			<div class="contactLeft">
-				<form>
-						<ul>
-							<li><input type="text" placeholder="Your Name"></li>
-							<li><input type="text" placeholder="Your Email"></li>
-							<li><textarea rows="10" cols="50" placeholder="Your Message"></textarea></li>
-							<li><input type="submit" value="send" class="formbtn"></li>
-						</ul>
-					</form>
-			</div>
-			<div class="contactRight">
-				<h5>Sed Ut Perspiciatis Unde Omnis Iste Natus Error Sit</h5>
-				<p>
-					Lorem ipsum dolor sit amet. Ut enim ad minim veniam, quis nostrud
-					exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur
-					sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit
-					anim id est laborum.Contrary to popular belief, Lorem Ipsum is not simply
-					random text. It has roots in a piece of classical Latin literature from 45 BC,
-				</p>
-				<h5>dAmIe</h5>
-				<p>
-					Lagos<br />
-					Phone Number: +234 703 368 7308
-					</p>
-			</div>
-			
-		</div>
-		<h4>CONTACT ME</h4>
-		<div class="contactMe">
-			
-		</div>
-	</div>		
-	<footer>
-		<div class="footer">
-			<div class="container">
-				<div class="footerSupport">
-					<h3>Support</h3>
-					<ul>
-						<li><a href="index.html">Terms and Conditions</a></li>
-						<li><a href="index.html">About</a></li>
-						<li><a href="index.html">Contact</li></a>
-						
-					</ul>
-				</div>
-				<div class="footerSupport">
-					<h3>Social Media Links</h3>
-					<ul id="media">
-						<li> <a href="https://web.facebook.com/Darhmelawlah/"><i class="fa fa-facebook"></i></a></li> 
-						<li> <a href="https://github.com/dahmie-code"><i class="fa fa-github"></i></a></li> 
-						<li> <a href="https://www.linkedin.com/in/ogungbenro-oluwadamilola-51979bb9/"><i class="fa fa-linkedin"></i></a></li>
-						<li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-	
-					</ul>
-				</div>
-				<div class="footerSupport">
-					<h3>Site</h3>
-					<ul>
-						<li><a href="index.html">Recent Works</a></li>
-						<li><a href="index.html">Short Codes</a></li>
-					</ul>
-				</div>
-			</div>
-			<div class="footerSecondLevel">
-				<p>&copy; 2021 dAmIe. All Rights Reserved. Inspired by TIIDELab</p>
-			</div>
-			
-		</div>
-		</footer>
+	   </footer>
 </body>
 </html>
