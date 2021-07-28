@@ -28,15 +28,26 @@ section {
     background-repeat: no-repeat;
     position: relative;
 }
+.navBar{
+    width: 100%;
+    height: 50vh;
+    background-image: url('img/background-img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 50px;
+    width:100%;
     background-color: #fff;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.25);
     padding: 0px 5%;
+    position: fixed;
+    z-index: 1;
 }
 
 nav ul {
@@ -57,7 +68,7 @@ nav ul li a {
 .logo {
     font-family: 'Faster One', cursive;
     font-size: 30px;
-    color: #505050;
+    color: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
 }
 
 .active {
@@ -130,6 +141,31 @@ button:active {
     align-items: center;
 }
 
+.abt-container {
+    width: 80%;
+    height: 500px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    display: flex;
+    margin: 100px auto;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#img-card{
+    border: none;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    background-color: #EBEBEB;
+}
+
+#img-card img:hover{
+    border: none;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
+    background-color: #EBEBEB;
+
+}
 .about-text {
     width: 500px;
 }
@@ -374,7 +410,6 @@ button:active {
     padding: 20px 40px;
     justify-content: space-between;
     align-items: center;
-    background-size: 400px;
 }
 
 #get-in-touch span{
@@ -499,4 +534,41 @@ button:active {
 .contact-right button:active{
 	transform: scale(1.04);
 	transition: all ease 0.1s;
+}
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #6d6d6d;
+    padding: 10px;
+}
+.copyright{
+    color:#fff;
+}
+.footer-social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social a{
+    width:35px;
+    height: 35px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    background-color: #292b3252;
+    margin: 5px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+.footer-social a:hover{
+    background-color: #2993f7;
+    transition: all ease 0.5s;
+}
+::selection{
+    color: #e4e4e4;
+    background-color: #416cdf;
 }

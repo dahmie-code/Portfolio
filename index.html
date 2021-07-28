@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" /> 
 </head>
 <body>
-   <section class="navBar">       
+   <section>       
       <!--Nav Bar-->
       <nav>
           <a href="#" class="logo">dAmIe</a>
           <ul>
-              <li><a href="#" class="active">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Projects</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="index.html" class="active">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="work.html">Projects</a></li>
+              <li><a href="contact.html">Contact</a></li>
           </ul>
           <div class="nav-toggle"></div>
       </nav>
@@ -33,13 +33,15 @@
       </div>
     <!-- About section -->
    <div class="about-container">
-     <img src="img/abt-img.png" alt="">
+       <div id="img-card">
+         <img src="img/abt-img.png" alt="">
+       </div>
      <div class="about-text">
         <p>About Me</p>
         <p>Software Developer</p>
         <p>
           My name is Damilola Ogungbenro. I am a creative, focused and innovative individual. I am an aspiring and budding frontend Website Developer specializing in bespoke websites for clients of all sizes. Currently, I am the creative director of Kraft Options, an Art and Craft store. I am capable within a range of tactical and big-picture web design tasks.</p>
-          <button>Download CV</button>
+          <a href="img/Damilola-Ogungbenro-Resume.pdf" download="Resume"><button> Download CV</button></a>
      </div>
    </div>
    <div class="skills">
@@ -131,5 +133,23 @@
           </div>
       </form>
    </div>
+   <!--Footer-->
+   <footer>
+    <span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/Darhmelawlah/">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://github.com/dahmie-code">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ogungbenro-oluwadamilola-51979bb9/">
+            <i class="fab fa-linkedin"></i>
+        </a>
+    </div>
+   </footer>
 </body>
 </html>
