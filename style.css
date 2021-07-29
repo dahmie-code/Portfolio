@@ -116,7 +116,6 @@ nav ul li a:hover {
 
 .text-container p{
     margin: 45px 0px 25px;
-    line-height:0px;
 }
 
 .text-container button{
@@ -145,7 +144,7 @@ button:active {
     transform: scale(1.1);
 }
 
-.about-container {
+/*.about-container {
     width: 80%;
     height: 330px;
     background: #fff;
@@ -156,16 +155,17 @@ button:active {
     position: relative;
     justify-content: space-evenly;
     align-items: center;
-}
+}*/
 
 .abt-container {
     width: 80%;
-    height: 500px;
+    height: auto;
     background: #fff;
     border-radius: 20px;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
     display: flex;
     margin: 100px auto;
+    padding:20px;
     position: relative;
     justify-content: space-evenly;
     align-items: center;
@@ -175,15 +175,14 @@ button:active {
     border: none;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
     background-color: #EBEBEB;
-    
 }
 
 #img-card img:hover{
     border: none;
     box-shadow: 2px 2px 12px rgba(0,0,0,0.5);
     background-color: #EBEBEB;
-
 }
+
 .about-text {
     width: 500px;
 }
@@ -218,7 +217,7 @@ button:active {
 
 .box-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-content: center;
     align-items: center;
     margin-bottom: 40px;
@@ -316,7 +315,7 @@ button:active {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 150px);
     margin: 0 auto;
-    max-width: 50%;
+    max-width: 80%;
     padding: 1rem 0;
 }
 
@@ -381,6 +380,7 @@ button:active {
 
 
 .skills {
+   width: 100%;
     height: auto;
     background-color: #fff;
     padding: 2% 10% 0% 10%;
@@ -389,7 +389,7 @@ button:active {
 .skills-img{
     display: flex;
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
@@ -509,32 +509,37 @@ button:active {
 }
 
 #recentWork {
-    height: 90vh;
+    flex-wrap: wrap;
+    /* height: 90vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
 }
 
 #recentWork >h3{
    font-size: 30px;
    color: #3b4eb8;
+   text-align: center;
 }
 
 #recentBody {
     display: flex;
+    flex-wrap: wrap;
     margin: 20px;
+    justify-content: center;
+    align-items: center;
 }
 
 .recent1 {
-    width: 23%;
+    min-width: 300px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-top: 7rem; 
-    margin:6px; 
+    margin:6px 20px; 
 }
   .r1 {
     background: 
@@ -775,14 +780,14 @@ footer {
     background-color: #416cdf;
 }
 
-@media (max-width:1000px){
+@media screen and (max-width:1000px){
 	*{
 		box-sizing: border-box;
 	}
 	.pix {
 		height: 90%;
 		left: 85%;
-		transform: translateX(-1%);
+		transform: translateX(-90%);
     }
     .text-container{
         top: 46%;
@@ -791,3 +796,71 @@ footer {
 	.text-container button{
 		margin: 5px;
     }
+    
+    .abt-container{
+		width:100%;
+        border-radius: 10px;
+        /* height: initial; */
+        flex-direction: row;
+        padding: 20px;
+        margin:10px;
+    }
+	.about-container img{
+		height: 200px;
+	}
+	.about-text{
+		width: 400px;
+	}
+}
+@media screen and (max-width: 768px){
+  
+    .abtImg-card {
+        display: none;
+               
+    }
+    .text-container{
+        top: 46%;
+        text-align: center;
+        left: 25%;
+    }
+	.text-container button{
+		margin: 5px;
+    }
+    .abt-container{
+		width:90%;
+        border-radius: 10px;
+        /* height: initial; */
+        flex-direction: column;
+        padding: 20px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #img-card {
+        margin-bottom: 20px;
+    }
+  	.abt-container img{
+        height: 150px; 
+	}
+	.about-text{
+        width: initial;
+    }
+    .about-text h3 {
+        font-size: 16px;
+        text-align: center
+    }
+
+    .about-text p {
+        font-size: 10px;
+        text-align: center
+    }
+    .about-text a {
+        display: flex;
+        justify-content: center;
+    }
+    .skills-img{
+        width: 90%;
+        margin: auto;
+      flex-direction: column;
+    }
+}
