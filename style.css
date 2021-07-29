@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Faster+One&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 
 *{
@@ -8,7 +9,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     background-color: #f6f5f5;
 }
 
@@ -20,7 +21,7 @@ a {
     text-decoration: none;
 }
 
-section {
+header {
     width: 100%;
     height: 90vh;
     background-image: url('img/bg.png');
@@ -29,9 +30,9 @@ section {
     position: relative;
 }
 
-.navBar{
+.navBar {
     width: 100%;
-    height: 50vh;
+    height: 30vh;
     background-image: url('img/background-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -39,7 +40,7 @@ section {
 .navBar-Overlay {
     background-color: rgba(10, 10, 10, 0.55);
 	width: 100%;
-	height: 50vh;
+	height: 30vh;
 	background-size: 100% 50vh;
 }
 
@@ -71,6 +72,16 @@ nav ul li a {
     font-weight: 600;
 }
 
+nav ul li a:hover {
+    border-radius: 8px;
+    background-color: #416cdf;
+    padding: 8px;
+    margin: 20px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+}
+
 .logo {
     font-family: 'Faster One', cursive;
     font-size: 30px;
@@ -83,10 +94,10 @@ nav ul li a {
 }
 
 .pix {
-    height: 520px;
+    height: 100%;
     position: absolute;
-    bottom:40px;
-    left: 65%;
+    bottom: 65px;
+    left: 90%;
     transform: translateX(-75%)
 }
 
@@ -177,24 +188,23 @@ button:active {
     width: 500px;
 }
 
-.about-text p:nth-child(1) {
+.about-text h3 {
     color: #403e3e;
     font-weight: bold;
     font-size: 30px;
-    margin: 20px;
 }
 
-.about-text p:nth-child(2){
+/*.about-text p:nth-child(2){
 	color:#3e3d3d;
 	font-size:20px;
 	font-weight:bold;
     line-height:5px;
     margin: 15px;
-}
-.about-text p:nth-child(3),.about-text p:nth-child(4){
+}*/
+.about-text p {
 	color:#7e7d7d;
     font-size:16px;
-    margin-bottom: 15px;
+    margin-bottom: 15px;    
 }
 
 .about-text button{
@@ -211,7 +221,7 @@ button:active {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin-bottom: 40px;;
+    margin-bottom: 40px;
 }
 
 .box-1, .box-2, .box-3 {
@@ -269,7 +279,7 @@ button:active {
 	width: 230px;
 	margin:0px 0px 20px 0px;
 }
-.box-1 button,
+/*.box-1 button,
 .box-2 button,
 .box-3 button{
 	width:100px;
@@ -278,11 +288,10 @@ button:active {
 	border:none;
 	outline: none;
 	border-radius:5px;
-}
+}*/
 
 .masonry-heading {
     margin-bottom: 1/2rem;
-    color: #416cdf;
 }
 
 .masonry-heading h3{
@@ -305,9 +314,9 @@ button:active {
     display: grid;
     grid-gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 200px);
+    grid-template-rows: repeat(8, 150px);
     margin: 0 auto;
-    max-width: 80%;
+    max-width: 50%;
     padding: 1rem 0;
 }
 
@@ -475,8 +484,7 @@ button:active {
     border-radius: 3px;
 }
 
-
-.skill-img{
+.skill-img {
     width:350px;
     height: 350px;
     padding-top: 30px;
@@ -493,17 +501,110 @@ button:active {
     color: #1d1c1c;
     font-size: 30px;
     line-height: 0px;
-    
 }
 
 .skills-text {
     width: 500px;
-    margin: 50px 375px;
+    margin: 50px 450px;
 }
 
+#recentWork {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#recentWork >h3{
+   font-size: 30px;
+   color: #3b4eb8;
+}
+
+#recentBody {
+    display: flex;
+    margin: 20px;
+}
+
+.recent1 {
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem; 
+    margin:6px; 
+}
+  .r1 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('img/Airline.JPG');
+      background-size: cover;  
+}
+  .r2 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('img/GuessingGame.png');
+      background-size: cover;
+}
+  .r3 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('img/weather_app.JPG');
+    background-size: cover;
+}
+  .r4 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('img/ProCleaners.JPG');
+    background-size: cover;
+}
+
+.r5 {
+    background: 
+      linear-gradient(
+        rgba(0, 0, 0, 0.4),
+        rgba(0, 0, 0, 0.4)
+      ),
+      url('img/farm2table.JPG');
+    background-size: cover;
+}
+
+.col4 h3{
+    color:#f6f5f5;
+    text-align: center;
+    margin: 0;    
+}
+
+.projectBtn {
+    color: #fff;
+    font-size: 20px;
+    border: 1px solid;
+    padding: 4px;
+    background-color: #416cdf;
+    text-decoration: none;
+}
+
+/*@keyframes fadeIn {
+    100% {
+      opacity: 1;
+    }
 #get-in-touch{
-    width: 80%;
-    height: 100px;
+    width: 90%;
+    height: 80px;
     background-color: #3e3d3d;
     display: flex;
     margin: 60px auto;
@@ -526,11 +627,11 @@ button:active {
     justify-content: center;
     align-items: center;
     background: linear-gradient(90deg,#2788e2 20%,#3b4eb8);
-}
+}*/
 
-#contact-form{
+#contact-form {
     width:100%;
-    height: 90vh;
+    margin: 60px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -605,6 +706,7 @@ button:active {
 	border-bottom: 1px solid #2788e2;
 	transition: all ease 0.5s;
 }
+
 .message h3{
 	font-size: 20px;
 	color:rgba(255, 255, 255, 0.5);
@@ -636,14 +738,14 @@ button:active {
 	transition: all ease 0.1s;
 }
 
-footer{
+footer {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: #6d6d6d;
     padding: 10px;
 }
-.copyright{
+.copyright {
     color:#fff;
 }
 .footer-social{
@@ -672,3 +774,20 @@ footer{
     color: #e4e4e4;
     background-color: #416cdf;
 }
+
+@media (max-width:1000px){
+	*{
+		box-sizing: border-box;
+	}
+	.pix {
+		height: 90%;
+		left: 85%;
+		transform: translateX(-1%);
+    }
+    .text-container{
+        top: 46%;
+        text-align: center;
+	}
+	.text-container button{
+		margin: 5px;
+    }
