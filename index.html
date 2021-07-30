@@ -6,51 +6,56 @@
     <title>Damilola Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-   <header>       
-      <!--Nav Bar-->
-      <nav>
-          <a href="#" class="logo">dAmIe</a>
-          <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="work.html">Projects</a></li>
-              <li><a href="contact.html">Contact</a></li>
-          </ul>
-          <div class="nav-toggle"></div>
-      </nav>
+    <header>
+        <section id="main">
+            <!--navigation-->
+            <nav>
+            <!--logo--->
+            <a href="#" class="logo">dAmIe</a>
+            <!--menu--------->
+            <div class="toggle"></div>
+            <ul class="menu">
+            <li class="active"><a href="index.html" >Home</a></li>	
+            <li><a href="about.html">About</a></li>	
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="work.html">Work</a></li>		
+            <li><a href="contact.html">Contact</a></li>	
+            </ul>
+            </nav>
+         </section>
     </header>
-<!-- Header-Text -->
-    <div class="text-container">
-       <p>Hi!</p>
-       <p>I am Damilola</p>
-       <p>Front-end Developer</p>
-       <p>Do you have business or idea you want to show to the world online?</p>
-       <a href="contact.html"><button class="hire-btn">Let's Chat</button></a>
+     <!--name-->
+    <section class="intro">
+	<div class="name">
+        <p>Hi,</p>
+        <!--name-->
+        <h1 class="nameColor">I'm <span> Damilola Ogungbenro</span>.<br> A Front-end Developer</h1>
+        <!--details-->
+        <p class="details">Do you have business or idea you want to show to the world online?</p>
+        <!--cv button-->
+        <a href="contact.html" class="chat-btn">Let's Chat</a>
     </div>
-      <div class="abtImg-card">
+    <div class="abtImg-card">
         <img src="img/header1.png" alt="" class="pix">
       </div>
-    
-
-       <!--Footer-->
-	<footer>
-			<span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
-			<div class="footer-social">
-				<a href="https://www.facebook.com/Darhmelawlah/">
-					<i class="fab fa-facebook-f"></i>
-				</a>
-				<a href="#">
-					<i class="fab fa-twitter"></i>
-				</a>
-				<a href="https://github.com/dahmie-code">
-					<i class="fab fa-github"></i>
-				</a>
-				<a href="https://www.linkedin.com/in/ogungbenro-oluwadamilola-51979bb9/">
-					<i class="fab fa-linkedin"></i>
-				</a>
-			</div>
-	</footer>
+   </section>
+      <!-- Footer -->
+      <footer>
+        <span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
+        <div class="footer-social">
+             <!--social-->
+              <div class="social">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>	
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-youtube"></i></a>	
+              </div>
+    </div>
+      </footer>
+      <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+      <script src="app.js"></script>
 </body>
 </html>

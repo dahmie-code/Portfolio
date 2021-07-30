@@ -1,76 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>Damilola</title>
-	<link rel="stylesheet" href="style.css">
-	<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damilola Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header class="navBar">   
-		<!--Nav Bar-->
-	   <div class="navBar-Overlay">
-		   <nav>
-			  <a href="#" class="logo">dAmIe</a>
-			   <ul>
-				 <li><a href="index.html" class="active">Home</a></li>
-				 <li><a href="about.html">About</a></li>
-				 <li><a href="work.html">Projects</a></li>
-				 <li><a href="contact.html">Contact</a></li>
-			   </ul>
-			    <div class="nav-toggle"></div>
-		   </nav>
-	    </div>
-	</header>
-	<main>
-	<div id="recentWork">
-		<h3>RECENT WORKS</h3>
-		<div id="recentBody">
-			<div class="recent1 r1 col4">
-					<h3>An Airline Website</h3>
-						<a href="https://creda-airline.netlify.app/" class="projectBtn fadeIn">View</a>
-					
-					</div>
-				<div class="recent1 r2 col4">
-					<h3>Mini Lucky Game</h3>
-					  <a href="https://mini-lucky-game.netlify.app/" class="projectBtn">View</a>
-				    
-				</div>
-				<div class="recent1 r3 col4">
-				   <h3>A Weather App</h3>
-				      <a href="https://dahmie-weather-app.netlify.app/" class="projectBtn">View</a>
-			        
-			    </div>
-				<div class="recent1 r4 col4">
-			       <h3>A Cleaning Service Web App</h3>
-					  <a href="https://tiidelab-proclener-assessment.netlify.app/" class="projectBtn">View</a> 
-					
-		        </div>
-				<div class="recent1 r5 col4">
-		           <h3>Farmer's Website</h3>
-		              <a href="https://farm2table.netlify.app" class="projectBtn">View</a>
-	                
-				</div>
-			</div>
-		</div>
-	</main>		
-	  <!--Footer-->
-	  <footer>
-		<span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
-		<div class="footer-social">
-			<a href="https://www.facebook.com/Darhmelawlah/">
-				<i class="fab fa-facebook-f"></i>
-			</a>
-			<a href="#">
-				<i class="fab fa-twitter"></i>
-			</a>
-			<a href="https://github.com/dahmie-code">
-				<i class="fab fa-github"></i>
-			</a>
-			<a href="https://www.linkedin.com/in/ogungbenro-oluwadamilola-51979bb9/">
-				<i class="fab fa-linkedin"></i>
-			</a>
-		</div>
-	   </footer>
+    <header>
+        <section id="main">
+            <!--navigation-->
+            <nav>
+            <!--logo--->
+            <a href="#" class="logo">dAmIe</a>
+            <!--menu--------->
+            <div class="toggle"></div>
+            <ul class="menu">
+            <li class="active"><a href="index.html" >Home</a></li>	
+            <li><a href="about.html">About</a></li>	
+            <!-- <li><a href="#services">Services</a></li> -->
+            <li><a href="work.html">Work</a></li>		
+            <li><a href="contact.html">Contact</a></li>	
+            </ul>
+            </nav>
+         </section>
+    </header>
+    <div class="navBar">
+    </div>
+    <main>
+        <!--Project-->
+	<section id="portfolio">
+        <!--heading-->
+        <h1 class="p-heading">Projects</h1>
+        <!--project-container-->
+        <div class="p-container">
+        <!--project-box-1-->
+        <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+        <a href="https://tiidelab-proclener-assessment.netlify.app/"><h1>Cleaning Service</h1></a>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img--->
+        <img src="img/ProCleaners.JPG">
+            
+        </div>
+        <!--project-box-2-->
+        <div class="p-box">
+            <!--text-->
+        <div class="overlay-text">
+        <a href="https://dahmie-weather-app.netlify.app/"><h1>Weather App</h1></a>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img-->
+        <img src="img/weather_app.JPG">
+        </div>
+        <!--project-box-3-->
+        <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+        <a href="https://mini-lucky-game.netlify.app/"><h1>Guessing Game</h1></a>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img-->
+        <img src="img/GuessingGame.png">
+        </div>
+        <!--project-box-4-------->
+        <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+        <a href="https://farm2table.netlify.app"><h1>Farmer's App</h1></a>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img-->	
+        <img src="img/farm2table.JPG">
+        </div>
+        <!--portfolio-box-5-->
+        <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+        <a href="https://creda-airline.netlify.app/"><h1>Airline Web App</h1></a>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img-->	
+        <img src="img/Airline.JPG">
+        </div>
+        <!--project-box-6--->
+        <div class="p-box">
+        <!--text-->
+        <div class="overlay-text">
+        <h1>Interior Decor</h1>
+        <p>Client Project</p>	
+        </div>
+        <!--bg-img-->	
+        <img src="img/interior.jpg">
+        </div>
+    </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
+        <div class="footer-social">
+             <!--social-->
+              <div class="social">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>	
+                 <a href="#"><i class="fab fa-twitter"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-youtube"></i></a>	
+              </div>
+    </div>
+      </footer>
+      <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
+      <script src="app.js"></script>
 </body>
 </html>
