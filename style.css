@@ -112,11 +112,30 @@ nav{
 	align-items: center;
 	background-color: #416cdf;
 	color:#FFFFFF;
+	outline:none;
 }
-.chat-btn:hover{
-	background-color: #131313;
-	transition: all ease 0.5s;
+.chat-btn span {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	transition: 0.5s;
+  }
+  
+  .chat-btn span:after {
+	content: '\00bb';
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	right: -20px;
+	transition: 0.5s;
+  }
+.chat-btn:hover span{
+	padding-right: 25px;
 }
+.chat-btn:hover span:after {
+	opacity: 1;
+	right: 0;
+  }
 .pix {
     height: 100%;
     position: absolute;
