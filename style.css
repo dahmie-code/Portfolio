@@ -530,6 +530,13 @@ p {
 	grid-row: 4/5
 }
 
+#back-to-top img {
+	position: relative;
+	left: 95%;
+	height: 40px;
+	width: 40px;
+}
+
 #contact-btn {
 	width: 100%;
 	display: flex;
@@ -935,6 +942,12 @@ footer {
 		display: none;
 	}
 
+    #back-to-top img {
+		position: relative;
+		left: 50%;
+		height: 25px;
+		width: 25px;
+	}
 
 	.p-container {
 		grid-template-columns: 1fr 1fr;
