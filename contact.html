@@ -29,57 +29,72 @@
     </header>
     <div class="navBar">
     </div>
+
+
     <main>
     <!--Contact-btn-->
 	<section id="contact-btn">
+
         <!--heading-->
-        <h1 class="c-b-heading">If You Have Any Project In Your Mind ?</h1>
-        <!--btn-------->
+        <h1 class="c-b-heading">Do You Have Any Project In Your Mind ?</h1>
+
+        <!--btn-->
             <!-- <a href="contact.html"><button >Contact Me</button></a> -->
         </section>
+
          <!--contact-form-->
 	<section id="contact-form">
-        <form>
+        <form name="contact" action="#" method="POST" data-netlify="true">
+
         <!--left-->
         <div class="contact-left">
-        <h1 class="c-l-heading">Write me</h1>
+        <h2 class="c-l-heading">Write me</h2>
+
         <!--name-------->
         <div class="f-name">
-        <label for="fullName"><font >Name</font></label>
-        <input type="text" placeholder="Full Name"/>
+        <label for="fullName" name="name"><font >Name</font></label>
+        <input type="text" placeholder="Full Name" required>
         </div>
+
         <!--email-->
         <div class="f-email">
-        <label for="email"><font >Email</font></label>
-        <input type="email" placeholder="Hi@gmail.com"/>
+        <label for="email" name="email"><font >Email</font></label>
+        <input type="email" placeholder="Hi@gmail.com" required>
         </div>
         </div>
+
         <!--right-->
         <div class="contact-right">
+
         <!--message-->
         <div class="message">
-        <label for="textarea"><font >Chat Box</font></label>
+        <label for="textarea" name="textarea"><font >Chat Box</font></label>
         <textarea name="message" rows="5" cols="20" placeholder="Drop a Message..."></textarea>
         </div>
+        
         <!--submit-btn-->
         <button>Submit</button>
         </div>
     </form>
         </section>
     </main>
+
+
     <!-- Footer -->
     <footer>
         <span class="copyright">Copyright &copy;Damie 2021-Inspired by TIIDELab Initiatives</span>
         <div class="footer-social">
              <!--social-->
               <div class="social">
-                 <a href="#"><i class="fab fa-facebook-f"></i></a>	
-                 <a href="#"><i class="fab fa-twitter"></i></a>
-                 <a href="#"><i class="fab fa-instagram"></i></a>
-                 <a href="#"><i class="fab fa-youtube"></i></a>	
+                 <a href="https://www.facebook.com/Darhmelawlah/"><i class="fab fa-facebook-f"></i></a>	
+                 <a href=""><i class="fab fa-twitter"></i></a>
+                 <a href="https://github.com/dahmie-code"><i class="fab fa-github"></i></a>
+                 <a href="https://www.linkedin.com/in/ogungbenro-oluwadamilola-51979bb9/"><i class="fab fa-linkedin"></i></a>	
               </div>
     </div>
       </footer>
+
+
       <script type="text/javascript" src="js/JQuery3.3.1.js"></script>
       <script src="app.js"></script>
 </body>
