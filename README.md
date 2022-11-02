@@ -2,7 +2,7 @@
 
 This porfolio project is to show my work to the world. I used HTML semantic tags and was to master the CSS layout concept, animation, and responsive design.
 
-##Tech Stack
+## Tech Stack
 
 HTML
 CSS
