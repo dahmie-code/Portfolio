@@ -4,14 +4,14 @@ This porfolio project is to show my work to the world. I used HTML semantic tags
 
 ## Tech Stack
 
-HTML
-CSS
-JavaScript
+* HTML
+* CSS
+* JavaScript
 
 The portoflio has four pages:
-Home Dispays my name, my stack and my picture
-About Description about me, a link to my resume, what I do and some of gallery section
-Work Displays some of the projects I've so far.
-Contact Shows a form that links to my email when contacted
+* Home Dispays my name, my stack and my picture
+* About Description about me, a link to my resume, what I do and some of gallery section
+* Work Displays some of the projects I've so far.
+* Contact Shows a form that links to my email when contacted
 
 
